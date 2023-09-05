@@ -180,11 +180,11 @@ print(f"Fecha de nacimiento: {dia_nacimiento}/{mes_nacimiento}/{anio_nacimiento}
 
 #ejercicio 20
 print("Formateando fecha - V-2")
-dia_nacimiento = input("Ingrese su día de nacimiento: ")
-mes_nacimiento = input("Ingrese el número del mes de nacimiento: ")
-anio_nacimiento = input("Ingrese el año de nacimiento: ")
-fecha_nacimiento = dia_nacimiento + mes_nacimiento + anio_nacimiento
-print(f"Fecha de nacimiento: {fecha_nacimiento}")
+fecha_nacimiento = input("Ingrese su fecha de nacimiento en el formato DDMMAAAA: ")
+dia = fecha_nacimiento[0:2]
+mes = fecha_nacimiento[2:4]
+anio = fecha_nacimiento[4::]
+print(f"Fecha de nacimiento: {dia}/{mes}/{anio}")
 
 #ejercicio 21
 print("Calculadora de combustible")
