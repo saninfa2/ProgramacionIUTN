@@ -9,7 +9,7 @@ elif (anios_computadora > 2):
 #Ejercicio 2
 print("Calculadora de edades")
 anios_computadora = int(input("Ingrese los que tiene su computadora: "))
-if (anios_computadora <= 2) :
+if (anios_computadora <= 2 and anios_computadora > 0) :
     print("Nuevo")
 elif (anios_computadora > 2):
     print("Viejo")
@@ -109,23 +109,53 @@ elif (edad > 18):
     print("Valor de entrada: $1000")
     
 #Ejercicio 11
-print("Pizzería Bella Napoli")
-print("Responda con si o no")
-eleccion = input("¿Desea una pizza vegetariana o no? :").lower()
-vegetariano = ["Pimiento", "Tofu"]
-no_vegetariano = ["Peperoni", "Jamón", "Salmón"]
-if (eleccion == "no"):
-    print("Opciones no veggies:")
-    print(no_vegetariano)
-    pizza = "No vegetariana"
-elif eleccion == 'si':
-    print("Opciones veggies")
-    print(vegetariano)
-    pizza = "Vegetariana"
+print("Bienvenido a la pizzería Bella Napoli")
 
-ingrediente_elegido = input("Puede elegir un ingrediente: ")
+#Declaracion de variables
+eleccion = " "
+vegetariano = ["pimiento", "tofu"]
+no_vegetariano = ["peperoni", "jamon", "salmon"]
+ingrediente_valido = False
+
+#Validamos las opciones de pizzas
+print("Responda con si o no")
+while eleccion != "si" and eleccion != "no":
+    eleccion = input("¿Desea una pizza vegetariana? ").lower()
+
+#Si se elige pizza no veggie
+if (eleccion == "no"):
+    pizza = "No vegetariana"
+    #Haciendo uso de un bucle while validamos los ingredientes, aunque se podría usar una función para no repetir código
+    while ingrediente_valido == False:
+        print("Opciones:")
+        print(no_vegetariano)
+        ingrediente_elegido = input("Ingrese el numero del ingrediente que prefiere: ").lower()
+        if (ingrediente_elegido in no_vegetariano):
+            ingrediente_valido = True;
+            print("Ingrediente agregado")
+        else: 
+            print("Ingrediente no valido")
+    
+#Si se elige pizza veggie
+elif eleccion == 'si':
+    pizza = "Vegetariana"
+    #Haciendo uso de un bucle while validamos los ingredientes, aunque se podría usar una función para no repetir código
+    while ingrediente_valido == False:
+        print("Opciones veggies")
+        print(vegetariano)
+        ingrediente_elegido = input("Ingrese el numero del ingrediente que prefiere: ").lower()
+        if (ingrediente_elegido in vegetariano):
+            ingrediente_valido = True;
+            print("Ingrediente agregado")
+        else: 
+            print("Ingrediente no valido")
+else: 
+    print('Opcion invalida')
+
+#Presentación de la pizza elegida
+print(" ")
 print(f"Pizza: {pizza}")
-print(f"Ingredientes: tomate, mozzarella,{ingrediente_elegido}")
+print(f"Ingredientes: tomate, mozzarella, {ingrediente_elegido}")
 
 #Ejercicio 12
 print("Calculadora de años")
