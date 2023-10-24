@@ -252,7 +252,7 @@ while funciones.numberPrime(number) != False:
         if (number > biggerNumber):
             biggerNumber = number
     else: 
-        #Justificamos la salida del bucle
+        #Justificamos la salida del bucle 
         print("El número ingresado no es primo")
         
 #Mostramos por pantalla el factorial del mayor número ingresado
@@ -260,6 +260,3 @@ factorialOfBiggerNumber = funciones.factorial(biggerNumber)
 print("Factorial del mayor número ingresado:")
 print(f"{biggerNumber}! = {factorialOfBiggerNumber}")
     
-    
-
-
