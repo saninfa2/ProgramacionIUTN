@@ -34,8 +34,11 @@ while option_valid != False:
         print("Saliendo del programa.")
         break
     else:
-        print("Opción invalida. Por favor selecciona una opciona valida")
+        print("Opción invalida. Intente nuevamente")
         option_valid = False
+
+print("Fin del programa")
+print(" ")
 
 #------------------------------- EJERCICIO 2 ---------------------------------------
 # Ejemplo de lista de compras
@@ -53,6 +56,9 @@ domicilios_factura = funcionesCopy.get_invoice_addresses(compras)
 print("Domicilios a los que se debe enviar una factura:")
 for domicilio in domicilios_factura:
     print(domicilio)
+
+print("Fin del programa")
+print(" ")
 
 #-------------------------------- EJERCICIO 3 -------------------------------------------
 #Inicialización de varibales
@@ -86,5 +92,8 @@ while option_valid != False:
         print("Saliendo del programa.")
         break
     else:
-        print("Opción no válida. Por favor, seleccione una opción válida.")
+        print("Opción no válida. Intente nuevamente")
         option_valid = False
+
+print("Fin del programa")
+print(" ")
