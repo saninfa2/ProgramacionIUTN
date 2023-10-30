@@ -13,19 +13,16 @@ def try_exit():
         print("Camino tomado: 1")
         print("No puedes salir de la jaula")
         print("Te quedaras 3 minutos en la jaula")
-        try_exit()
     elif(path == 2):
         counter += 5
         print("Camino tomado: 2")
         print("No puedes salir de la jaula")
         print("Te quedaras 5 minutos en la jaula")
-        try_exit()
     elif(path == 3):
         print("Camino tomado: 3")
         counter += 7
         print("Te quedaras 7 minutos en la jaula")
         print("Puedes salir de la jaula")
-    
 
 try_exit()
 
