@@ -1,3 +1,20 @@
+#Ejericicio 1
+def counter_digit_v2(n):
+    #caso base: si ya no tiene más cifras retorna n
+    if n < 10:
+        count = 1
+    else:
+    #caso recursivo: si tiene más de una cifra debe dividirlo por diez, y llamarse a si misma
+        count = 1 + counter_digit_v2(n//10)
+    return count
+
+#Ejercicio 2
+def is_potencia(n, b):
+    if b == 0 or b == 1:
+        potencia = False
+    else: 
+        potencia = n - is_potencia(n, b-1)
+        
 #Ejercicio 3
 def found_position(a, b, index=0):
     # Inicializar una lista para almacenar las posiciones encontradas
@@ -68,3 +85,13 @@ def combinations(list, k, cadena_actual=""):
         return
     for caracter in list:
         combinations(list, k - 1, cadena_actual + caracter)
+        
+#Ejercicio 10
+def dimensions_peper_A(N):
+    if N == 0:
+        return (841, 1189)  # Medidas de la hoja A0
+    else:
+        before_width, before_length = dimensions_peper_A(N - 1)
+        new_width = before_length
+        new_length = before_width / 2
+        return (new_width, new_length)
