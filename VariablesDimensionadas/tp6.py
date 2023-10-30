@@ -1,7 +1,6 @@
 import funcionesCopy
 
 #Ejercicio 1
-"""
 print("Creando una lista de números:")
 list_of_number_int = funcionesCopy.setlistNumber()
 print("Lista: ")
@@ -19,6 +18,7 @@ print("Lista original:")
 funcionesCopy.showList(list_of_number_int)
 print("Lista actual:")
 funcionesCopy.showList(list_whit_number_delete)
+
 
 #Ejercicio 3
 #Imprimir la sumatoria de todos los números de la lista
@@ -190,7 +190,7 @@ info = {
 # Mostrar la información del usuario
 mensaje = f"{info['nombre']} tiene {info['edad']} años, vive en {info['dirección']} y su número de teléfono es {info['teléfono']}."
 print(mensaje)
-"""
+
 
 #Ejercicio 13
 # Crear un diccionario con los precios de las frutas
