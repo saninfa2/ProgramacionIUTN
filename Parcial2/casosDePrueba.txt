@@ -1,0 +1,3 @@
+Casos de prueba:
+ADN mutante: ["ATGTCA", "ACTAGT", "AGCTGG", "AACGTG", "CGTACG", "GTAGAG"]
+ADN no mutante: ["ATGTCA", "ACTAGT", "TGCCGC", "CACTTC", "CTTACC", "GCAGAG"]
