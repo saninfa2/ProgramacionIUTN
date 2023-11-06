@@ -109,7 +109,7 @@ def is_mutant():
     print(coincidences)
     coincidences += diagonalSearch(dna,2,0)
     print(coincidences)
-    #Para evitar sobrecargar la función, solo se llaman a las busquedas de diagonales invertidas si el contador es menos a 1
+    #Para evitar sobrecargar la función, solo se llaman a las busquedas de diagonales invertidas si el contador es menor a 1
     if (coincidences < 1):
         coincidences += diagonalSearch(dna,0,3)
         print(coincidences)
@@ -124,7 +124,7 @@ def is_mutant():
     
     if coincidences >= 2:
         result = True
-    #Para no agregar más lineas al código con el operador ternario definimos el valor de retorno
+        
     return result
     
     
