@@ -100,27 +100,17 @@ def is_mutant():
     coincidences += horizontalSearch(dna)
     #Búsqueda por diagonales
     coincidences += diagonalSearch(dna, 0,2)
-    print(coincidences)
     coincidences += diagonalSearch(dna,0,1)
-    print(coincidences)
     coincidences += diagonalSearch(dna,0,0)
-    print(coincidences)
     coincidences += diagonalSearch(dna,1,0)
-    print(coincidences)
     coincidences += diagonalSearch(dna,2,0)
-    print(coincidences)
     #Para evitar sobrecargar la función, solo se llaman a las busquedas de diagonales invertidas si el contador es menor a 1
     if (coincidences < 1):
         coincidences += diagonalSearch(dna,0,3)
-        print(coincidences)
         coincidences += diagonalSearch(dna,0,4)
-        print(coincidences)
         coincidences += diagonalSearch(dna,0,5)
-        print(coincidences)
         coincidences += diagonalSearch(dna,1,5)
-        print(coincidences)
         coincidences += diagonalSearch(dna,2,5)
-        print(coincidences)
     
     if coincidences >= 2:
         result = True
